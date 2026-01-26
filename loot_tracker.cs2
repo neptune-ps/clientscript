@@ -1,0 +1,61 @@
+[command,loottracker_sourceadd](string $source_name, int $category, int $level, int $unique_identifier)
+
+[command,loottracker_sourcenamecount]()(int)
+
+[command,loottracker_sourcename](int $source_id)(string)
+
+[command,loottracker_sourceid](string $source_name)(int)
+
+[command,loottracker_sourcecount](string $source_name)(int)
+
+[command,loottracker_sourcequery_new](int $offset, int $limit, int $type)(int)
+
+[command,loottracker_sourcequery_get](int $index)(int)
+
+[command,unknown_command_7607]()()
+
+[command,loottracker_getdroplimit]()(int)
+
+[command,loottracker_lootcount_byname](string $source_name)(int)
+
+[command,loottracker_lootcount_byid](int $source_id)(int)
+
+[command,loottracker_lootget_byname](string $source_name, int $index)(obj, int)
+
+[command,loottracker_lootget_byid](int $source_id, int $index)(obj, int)
+
+[command,loottracker_clear]
+
+[command,loottracker_lootdel_byname](string $source_name)
+
+[command,loottracker_lootdel_byid](int $source_id)
+
+[command,loottracker_ignorelootadd](string $pattern)
+
+[command,loottracker_ignorelootdel](string $pattern)
+
+[command,loottracker_ignorelootdelat](int $index)
+
+[command,loottracker_ignorelootcount]()(int)
+
+[command,loottracker_ignorelootget](int $index)(string)
+
+[command,loottracker_ignorelootclear]
+
+[command,loottracker_ignoresourceadd](string $pattern)
+
+[command,loottracker_ignoresourcedel](string $pattern)
+
+[command,loottracker_ignoresourcedelat](int $index)
+
+[command,loottracker_ignoresourcecount]()(int)
+
+[command,loottracker_ignoresourceget](int $index)(string)
+
+[command,loottracker_ignoresourceclear]
+
+[command,loottracker_lootadd](string $source_name, obj $obj, int $count, int $source_unique_identifier)
+
+[command,loottracker_setdroplimit](int $hard_limit)
+
+[command,loottracker_sourcedropname](int $source_id)(string)

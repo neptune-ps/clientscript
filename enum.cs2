@@ -1,0 +1,5 @@
+[command,enum_string](enum $x1, int $x2)(string)
+
+[command,enum]/*(type $input_type, type $output_type, enum $enum, any $lookup)(any)*/
+
+[command,enum_getoutputcount](enum $x1)(int)

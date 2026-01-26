@@ -1,0 +1,5 @@
+[command,keyheld](int $x1)(boolean)
+
+[command,keypressed](int $x1)(boolean)
+
+[command,keyreleased](int $x1)(boolean)

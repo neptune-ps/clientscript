@@ -1,0 +1,113 @@
+[command,friend_count]()(int)
+
+[command,friend_getname](int $x1)(string,string)
+
+[command,friend_getworld](int $x1)(int)
+
+[command,friend_getrank](int $x1)(int)
+
+[command,friend_setrank](string $x1, int $x2)
+
+[command,friend_add](string $x1)
+
+[command,friend_del](string $x1)
+
+[command,ignore_add](string $x1)
+
+[command,ignore_del](string $x1)
+
+[command,friend_test](string $x1)(boolean)
+
+[command,friendschat_getchatdisplayname]()(string)
+
+[command,friendschat_getchatcount]()(int)
+
+[command,friendschat_getchatusername](int $x1)(string)
+
+[command,friendschat_getchatuserworld](int $x1)(int)
+
+[command,friendschat_getchatuserrank](int $x1)(int)
+
+[command,friendschat_getchatminkick]()(int)
+
+[command,friendschat_kickuser](string $x1)
+
+[command,friendschat_getchatrank]()(int)
+
+[command,friendschat_joinchat](string $x1)
+
+[command,friendschat_leavechat]
+
+[command,ignore_count]()(int)
+
+[command,ignore_getname](int $x1)(string,string)
+
+[command,ignore_test](string $x1)(boolean)
+
+[command,friendschat_isself](int $x1)(boolean)
+
+[command,friendschat_getchatownername]()(string)
+
+[command,friendschat_isfriend](int $x1)(boolean)
+
+[command,friendschat_isignore](int $x1)(boolean)
+
+[command,friendlist_sort_reset]
+
+[command,friendlist_sort_legacy](boolean $x1)
+
+[command,friendlist_sort_name](boolean $x1)
+
+[command,friendlist_sort_world](boolean $x1)
+
+[command,friendlist_sort_lastworldchange](boolean $x1)
+
+[command,friendlist_sort_online_status](boolean $x1)
+
+[command,friendlist_sort_online_name](boolean $x1)
+
+[command,friendlist_sort_online_lastworldchange](boolean $x1)
+
+[command,friendlist_sort_online_world](boolean $x1)
+
+[command,friendlist_sort_ownworld_name](boolean $x1)
+
+[command,friendlist_sort_ownworld_world](boolean $x1)
+
+[command,friendlist_sort_apply]
+
+[command,ignorelist_sort_reset]
+
+[command,ignorelist_sort_legacy](boolean $x1)
+
+[command,ignorelist_sort_name](boolean $x1)
+
+[command,ignorelist_sort_apply]
+
+[command,friendschat_sort_reset]
+
+[command,friendschat_sort_legacy](boolean $x1)
+
+[command,friendschat_sort_name](boolean $x1)
+
+[command,friendschat_sort_world](boolean $x1)
+
+[command,friendschat_sort_lastworldchange](boolean $x1)
+
+[command,friendschat_sort_online_status](boolean $x1)
+
+[command,friendschat_sort_online_name](boolean $x1)
+
+[command,friendschat_sort_online_lastworldchange](boolean $x1)
+
+[command,friendschat_sort_online_world](boolean $x1)
+
+[command,friendschat_sort_ownworld_name](boolean $x1)
+
+[command,friendschat_sort_ownworld_world](boolean $x1)
+
+[command,friendschat_sort_apply]
+
+[command,friendlist_sort_rank](boolean $x1)
+
+[command,friendschat_sort_rank](boolean $x1)

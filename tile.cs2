@@ -1,0 +1,3 @@
+[command,tile_coord]()(coord)
+
+[command,tile_find](coord $x1)(boolean)

@@ -1,0 +1,5 @@
+[command,objstack_size](coord $coord)(int)
+
+[command,objstack_obj](coord $coord, int $index)(obj)
+
+[command,objstack_count](coord $coord, int $index)(int)

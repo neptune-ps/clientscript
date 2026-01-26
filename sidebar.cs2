@@ -1,0 +1,5 @@
+[command,unknown_command_6230](int $x1)
+
+[command,sidebar_setwidth](int $x1, int $x2)
+
+[command,sidebar_clearwidth](int $x1)

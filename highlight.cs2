@@ -1,0 +1,89 @@
+[command,highlight_npc_setup](int $x1, int $x2, int $x3, int $x4, int $x5)
+
+[command,highlight_npc_on](npc_uid $x1, int $x2, int $x3)
+
+[command,highlight_npc_off](npc_uid $x1, int $x2, int $x3)
+
+[command,highlight_npc_get](npc_uid $x1, int $x2, int $x3)(boolean)
+
+[command,highlight_npc_clear](int $x1)
+
+[command,highlight_npctype_setup](int $x1, int $x2, int $x3, int $x4, int $x5)
+
+[command,highlight_npctype_on](npc $x1, int $x2)
+
+[command,highlight_npctype_off](npc $x1, int $x2)
+
+[command,highlight_npctype_get](npc $x1, int $x2)(boolean)
+
+[command,highlight_npctype_clear](int $x1)
+
+[command,highlight_loc_setup](int $x1, int $x2, int $x3, int $x4, int $x5)
+
+[command,highlight_loc_on](loc $x1, coord $x2, int $x3, int $x4)
+
+[command,highlight_loc_off](loc $x1, coord $x2, int $x3, int $x4)
+
+[command,highlight_loc_get](loc $x1, coord $x2, int $x3, int $x4)(boolean)
+
+[command,highlight_loc_clear](int $x1)
+
+[command,highlight_loctype_setup](int $x1, int $x2, int $x3, int $x4, int $x5)
+
+[command,highlight_loctype_on](loc $x1, int $x2)
+
+[command,highlight_loctype_off](loc $x1, int $x2)
+
+[command,highlight_loctype_get](loc $x1, int $x2)(boolean)
+
+[command,highlight_loctype_clear](int $x1)
+
+[command,highlight_obj_setup](int $x1, int $x2, int $x3, int $x4, int $x5)
+
+[command,highlight_obj_on](obj $x1, coord $x2, int $x3, int $x4)
+
+[command,highlight_obj_off](obj $x1, coord $x2, int $x3, int $x4)
+
+[command,highlight_obj_get](obj $x1, coord $x2, int $x3, int $x4)(boolean)
+
+[command,highlight_obj_clear](int $x1)
+
+[command,highlight_objtype_setup](int $x1, int $x2, int $x3, int $x4, int $x5)
+
+[command,highlight_objtype_on](obj $x1, int $x2)
+
+[command,highlight_objtype_off](obj $x1, int $x2)
+
+[command,highlight_objtype_get](obj $x1, int $x2)(boolean)
+
+[command,highlight_objtype_clear](int $x1)
+
+[command,highlight_player_setup](int $x1, int $x2, int $x3, int $x4, int $x5)
+
+[command,highlight_player_on](string $x1, int $x2)
+
+[command,highlight_player_off](string $x1, int $x2)
+
+[command,highlight_player_get](string $x1, int $x2)(boolean)
+
+[command,highlight_player_clear](int $x1)
+
+[command,highlight_tile_setup](int $x1, int $x2, int $x3, int $x4, int $x5)
+
+[command,highlight_tile_on](coord $x1, int $x2, int $x3)
+
+[command,highlight_tile_off](coord $x1, int $x2, int $x3)
+
+[command,highlight_tile_get](coord $x1, int $x2, int $x3)(boolean)
+
+[command,highlight_tile_clear](int $x1)
+
+[command,highlight_group_setup](int $x1, int $x2, int $x3, int $x4, int $x5)
+
+[command,highlight_group_on](string $x1, int $x2)
+
+[command,highlight_group_off](string $x1, int $x2)
+
+[command,highlight_group_get](string $x1, int $x2)(boolean)
+
+[command,highlight_group_clear](int $x1)

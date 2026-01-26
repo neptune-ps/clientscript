@@ -1,0 +1,72 @@
+[command,array_sort](array $x1, array $x2)
+
+[command,array_randomise](array $array, int $seed1, int $seed2)
+
+/**
+ * Alias of `array_randomise`.
+ */
+[command,array_randomize](array $array, int $seed1, int $seed2)
+
+/**
+ * Checks whether [array] is `null`.
+ */
+[command,array_isnull](array $array)(boolean)
+
+/**
+ * Returns the number of elements in [array].
+ */
+[command,array_size](array $array)(int)
+
+/**
+ * Compares two arrays of the same type lexicographically.
+ */
+// TODO more docs
+[command,array_compare](array $array1, array $array2)(int)
+
+[command,array_indexof](array $array, any $search, int $start, int $end)(int)
+
+[command,array_lastindexof](array $array, any $search, int $start, int $end)(int)
+
+[command,array_count](array $array, any $search, int $start, int $end)(int)
+
+[command,array_min](array $array)(any)
+
+[command,array_max](array $array)(any)
+
+[command,array_fill](array $array, any $value, int $start, int $end)
+
+[command,array_generaterange](intarray $array, int $initial, int $index, int $count)
+
+[command,array_reverse](array $array)
+
+[command,array_swap](array $array, int $index1, int $index2)
+
+[command,array_copy](array $source, array $destination, int $source_pos, int $destination_pos, int $length)
+
+[command,array_total](intarray $array)(int)
+
+[command,array_indexofsum](intarray $array, int $value)(int)
+
+[command,string_split](string $text, string $delimiter)(stringarray)
+
+[command,string_join](stringarray $array, string $delimiter)(string)
+
+[command,enum_getinputs](type $inputtype, enum $enum)(array)
+
+[command,enum_getoutputs](type $outputtype, enum $enum)(array)
+
+[command,array_create](type $type, int $size, int $capacity)(array)
+
+[command,array_resize](array $array, int $size)
+
+[command,array_push](array $array, any $value)
+
+[command,array_insert](array $array, any $value, int $index)
+
+[command,array_delete](array $array, int $index)(any)
+
+[command,array_pushall](array $array, array $values)
+
+[command,array_insertall](array $array, array $values, int $index)
+
+[command,array_deleteall](array $array, int $count, int $index)

@@ -1,0 +1,5 @@
+[command,steam_setachievement](string $x1, boolean $x2, boolean $x3)(boolean)
+
+[command,steam_setstat](string $x1, int $x2, boolean $x3)(boolean)
+
+[command,steam_storestats]()(boolean)

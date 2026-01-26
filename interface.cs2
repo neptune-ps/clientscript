@@ -1,0 +1,1012 @@
+[command,cc_create](component $component, int $type, int $subid, boolean $assert_empty)
+[command,.cc_create](component $component, int $type, int $subid, boolean $assert_empty)
+
+[command,cc_delete]
+[command,.cc_delete]
+
+[command,cc_deleteall](component $component)
+[command,.cc_deleteall](component $component)
+
+[command,cc_create_entityoverlay](entityoverlay $overlay, int $type, int $subid)
+[command,.cc_create_entityoverlay](entityoverlay $overlay, int $type, int $subid)
+
+[command,cc_deleteall_entityoverlay](entityoverlay $overlay)
+[command,.cc_deleteall_entityoverlay](entityoverlay $overlay)
+
+[command,cc_copy](component $component, int $subid, int $newsubid)
+[command,.cc_copy](component $component, int $subid, int $newsubid)
+
+[command,cc_create_child](int $type, int $subid)
+[command,.cc_create_child](int $type, int $subid)
+
+[command,cc_create_sibling](int $type, int $subid)
+[command,.cc_create_sibling](int $type, int $subid)
+
+[command,cc_find](component $component, int $subid)(int)
+[command,.cc_find](component $component, int $subid)(int)
+
+[command,if_find](component $component)(int)
+[command,.if_find](component $component)(int)
+
+[command,if_find_entityoverlay](entityoverlay $overlay)(int)
+[command,.if_find_entityoverlay](entityoverlay $overlay)(int)
+
+[command,cc_find_entityoverlay](entityoverlay $overlay, int $subid)(int)
+[command,.cc_find_entityoverlay](entityoverlay $overlay, int $subid)(int)
+
+[command,cc_find_parent]()(int)
+[command,.cc_find_parent]()(int)
+
+[command,cc_find_layer]()(int)
+[command,.cc_find_layer]()(int)
+
+[command,cc_find_next]()(int)
+[command,.cc_find_next]()(int)
+
+[command,cc_deleteallchild]()(int)
+[command,.cc_deleteallchild]()(int)
+
+[command,cc_countchild]()(int)
+[command,.cc_countchild]()(int)
+
+[command,cc_parentsubid]()(int)
+[command,.cc_parentsubid]()(int)
+
+[command,if_find_child](component $layer, param $param1, any $value1, param $param2, any $value2)(boolean)
+[command,.if_find_child](component $layer, param $param1, any $value1, param $param2, any $value2)(boolean)
+
+/**
+ * Finds all children of [layer] and [layersubid] using the specified [mode].
+ *
+ * The filtering modes:
+ *  - 0: Finds all children.
+ *  - 1: Finds only direct children.
+ *  - 2: Finds only direct children, including any dynamic layer children recursively.
+ *
+ * @return The amount of children found.
+ */
+[command,if_children_find](int $mode, component $layer, int $layersubid)(int)
+
+/**
+ * Finds all children of the `active_component` using the specified [mode].
+ *
+ * The filtering modes:
+ *  - 0: Finds all children.
+ *  - 1: Finds only direct children.
+ *  - 2: Finds only direct children, including any dynamic layer children recursively.
+ *
+ * @return The amount of children found.
+ */
+[command,cc_children_find](int $mode)(int)
+[command,.cc_children_find](int $mode)(int)
+
+[command,if_children_findnext]()(boolean)
+[command,.if_children_findnext]()(boolean)
+
+[command,if_children_findnextid]()(int)
+
+[command,if_children_subids]()(intarray)
+
+[command,if_children_filter](param $param, any $value)(int)
+
+[command,cc_setposition](int $x, int $y, int $modeh, int $modev)
+[command,.cc_setposition](int $x, int $y, int $modeh, int $modev)
+
+[command,cc_setsize](int $width, int $height, int $modeh, int $modev)
+[command,.cc_setsize](int $width, int $height, int $modeh, int $modev)
+
+[command,cc_sethide](boolean $x1)
+[command,.cc_sethide](boolean $x1)
+
+[command,cc_setnoclickthrough](boolean $x1)
+[command,.cc_setnoclickthrough](boolean $x1)
+
+[command,cc_setnoscrollthrough](boolean $x1)
+[command,.cc_setnoscrollthrough](boolean $x1)
+
+[command,cc_setscrollpos](int $x, int $y)
+[command,.cc_setscrollpos](int $x, int $y)
+
+[command,cc_setcolour](int $x1)
+[command,.cc_setcolour](int $x1)
+
+// For us Americans
+[command,cc_setcolor](int $x1)
+[command,.cc_setcolor](int $x1)
+
+[command,cc_setfill](boolean $x1)
+[command,.cc_setfill](boolean $x1)
+
+[command,cc_settrans](int $x1)
+[command,.cc_settrans](int $x1)
+
+[command,cc_setlinewid](int $x1)
+[command,.cc_setlinewid](int $x1)
+
+[command,cc_setgraphic](graphic $x1)
+[command,.cc_setgraphic](graphic $x1)
+
+[command,cc_set2dangle](int $x1)
+[command,.cc_set2dangle](int $x1)
+
+[command,cc_settiling](boolean $x1)
+[command,.cc_settiling](boolean $x1)
+
+[command,cc_setmodel](model $x1)
+[command,.cc_setmodel](model $x1)
+
+[command,cc_setmodelangle](int $x1, int $x2, int $x3, int $x4, int $x5, int $x6)
+[command,.cc_setmodelangle](int $x1, int $x2, int $x3, int $x4, int $x5, int $x6)
+
+[command,cc_setmodelanim](seq $x1)
+[command,.cc_setmodelanim](seq $x1)
+
+[command,cc_setmodelorthog](boolean $x1)
+[command,.cc_setmodelorthog](boolean $x1)
+
+[command,cc_settext](string $x1)
+[command,.cc_settext](string $x1)
+
+[command,cc_settextfont](graphic $x1)
+[command,.cc_settextfont](graphic $x1)
+
+[command,cc_settextalign](int $h, int $v, int $x3)
+[command,.cc_settextalign](int $h, int $v, int $x3)
+
+[command,cc_settextshadow](boolean $x1)
+[command,.cc_settextshadow](boolean $x1)
+
+[command,cc_setoutline](int $x1)
+[command,.cc_setoutline](int $x1)
+
+[command,cc_setgraphicshadow](int $x1)
+[command,.cc_setgraphicshadow](int $x1)
+
+[command,cc_setvflip](boolean $x1)
+[command,.cc_setvflip](boolean $x1)
+
+[command,cc_sethflip](boolean $x1)
+[command,.cc_sethflip](boolean $x1)
+
+[command,cc_setscrollsize](int $width, int $height)
+[command,.cc_setscrollsize](int $width, int $height)
+
+[command,cc_resume_pausebutton]
+[command,.cc_resume_pausebutton]
+
+[command,cc_setclickmask](graphic $x1)
+[command,.cc_setclickmask](graphic $x1)
+
+[command,cc_setblendcolour](int $x1)
+[command,.cc_setblendcolour](int $x1)
+
+[command,cc_setblendtrans](int $x1)
+[command,.cc_setblendtrans](int $x1)
+
+[command,cc_setblendmode](int $x1)
+[command,.cc_setblendmode](int $x1)
+
+[command,cc_setlinedirection](boolean $x1)
+[command,.cc_setlinedirection](boolean $x1)
+
+[command,cc_setmodeltransparent](boolean $x1)
+[command,.cc_setmodeltransparent](boolean $x1)
+
+[command,cc_setarc](int $x1, int $x2)
+[command,.cc_setarc](int $x1, int $x2)
+
+[command,cc_sethttpsprite](string $x1)
+[command,.cc_sethttpsprite](string $x1)
+
+[command,cc_crmview_init](string $x1)
+[command,.cc_crmview_init](string $x1)
+
+[command,cc_crmview_settextfont](int $x1, graphic $x2)
+[command,.cc_crmview_settextfont](int $x1, graphic $x2)
+
+[command,cc_crmview_setservertargets](string $x1, int $x2)
+[command,.cc_crmview_setservertargets](string $x1, int $x2)
+
+[command,cc_input_setselectcolour](int $x1)
+[command,.cc_input_setselectcolour](int $x1)
+
+[command,cc_input_setselectbgcolour](int $x1)
+[command,.cc_input_setselectbgcolour](int $x1)
+
+[command,cc_input_setplaceholdertext](string $x1)
+[command,.cc_input_setplaceholdertext](string $x1)
+
+[command,cc_input_setplaceholdertextcolour](int $x1)
+[command,.cc_input_setplaceholdertextcolour](int $x1)
+
+[command,cc_input_setlinewrappingwidth](int $x1)
+[command,.cc_input_setlinewrappingwidth](int $x1)
+
+[command,cc_input_setlinecountlimit](int $x1)
+[command,.cc_input_setlinecountlimit](int $x1)
+
+[command,cc_input_setlinewidthlimit](int $x1)
+[command,.cc_input_setlinewidthlimit](int $x1)
+
+[command,cc_input_setfocus](boolean $x1)
+[command,.cc_input_setfocus](boolean $x1)
+
+[command,cc_input_setfocusable](boolean $x1)
+[command,.cc_input_setfocusable](boolean $x1)
+
+[command,cc_input_setselection](int $x1, int $x2)
+[command,.cc_input_setselection](int $x1, int $x2)
+
+[command,cc_input_setcaret](int $x1)
+[command,.cc_input_setcaret](int $x1)
+
+[command,cc_input_setwrapmode](int $x1)
+[command,.cc_input_setwrapmode](int $x1)
+
+[command,cc_input_setsubmitmode](int $x1)
+[command,.cc_input_setsubmitmode](int $x1)
+
+[command,cc_input_setacceptmode](int $x1)
+[command,.cc_input_setacceptmode](int $x1)
+
+[command,cc_input_setcensormode](int $x1)
+[command,.cc_input_setcensormode](int $x1)
+
+[command,cc_input_setkeymode](int $x1, int $x2)
+[command,.cc_input_setkeymode](int $x1, int $x2)
+
+[command,cc_input_setcharmode](char $x1, int $x2)
+[command,.cc_input_setcharmode](char $x1, int $x2)
+
+[command,cc_crmview_setjson](string $x1)
+[command,.cc_crmview_setjson](string $x1)
+
+[command,cc_crmview_init_v2](string $x1, string $x2, string $x3)
+[command,.cc_crmview_init_v2](string $x1, string $x2, string $x3)
+
+[command,cc_crmview_dismiss]()(boolean)
+[command,.cc_crmview_dismiss]()(boolean)
+
+[command,cc_setobject](obj $x1, int $x2)
+[command,.cc_setobject](obj $x1, int $x2)
+
+[command,cc_setnpchead](npc $x1)
+[command,.cc_setnpchead](npc $x1)
+
+[command,cc_setplayerhead_self]
+[command,.cc_setplayerhead_self]
+
+[command,cc_setobject_nonum](obj $x1, int $x2)
+[command,.cc_setobject_nonum](obj $x1, int $x2)
+
+[command,cc_setplayermodel_self](boolean $x1)
+[command,.cc_setplayermodel_self](boolean $x1)
+
+[command,cc_setplayermodel_obj](obj $x1)
+[command,.cc_setplayermodel_obj](obj $x1)
+
+[command,cc_setplayermodel_basecolour](int $x1, int $x2)
+[command,.cc_setplayermodel_basecolour](int $x1, int $x2)
+
+[command,cc_setplayermodel_bodytype](int $x1)
+[command,.cc_setplayermodel_bodytype](int $x1)
+
+[command,cc_setobject_alwaysnum](obj $x1, int $x2)
+[command,.cc_setobject_alwaysnum](obj $x1, int $x2)
+
+[command,cc_setobject_nummode](obj $x1, int $x2, int $x3)
+[command,.cc_setobject_nummode](obj $x1, int $x2, int $x3)
+
+[command,cc_setlocmodel](loc $x1)
+[command,.cc_setlocmodel](loc $x1)
+
+[command,cc_setnpcmodel](npc $x1)
+[command,.cc_setnpcmodel](npc $x1)
+
+[command,cc_setop](int $x1, string $x2)
+[command,.cc_setop](int $x1, string $x2)
+
+[command,cc_setdraggable](component $x1, int $x2)
+[command,.cc_setdraggable](component $x1, int $x2)
+
+[command,cc_setdragrenderbehaviour](int $x1)
+[command,.cc_setdragrenderbehaviour](int $x1)
+
+[command,cc_setdragdeadzone](int $x1)
+[command,.cc_setdragdeadzone](int $x1)
+
+[command,cc_setdragdeadtime](int $x1)
+[command,.cc_setdragdeadtime](int $x1)
+
+[command,cc_setopbase](string $x1)
+[command,.cc_setopbase](string $x1)
+
+[command,cc_settargetverb](string $x1)
+[command,.cc_settargetverb](string $x1)
+
+[command,cc_clearops]
+[command,.cc_clearops]
+
+[command,cc_setalwaysleftclick](boolean $x1)
+[command,.cc_setalwaysleftclick](boolean $x1)
+
+[command,cc_setpinch](boolean $x1)
+[command,.cc_setpinch](boolean $x1)
+
+[command,cc_clearsubops](int $index)
+[command,.cc_clearsubops](int $index)
+
+[command,cc_setsubop](int $index, int $subindex, string $op)
+[command,.cc_setsubop](int $index, int $subindex, string $op)
+
+[command,cc_setoppriority](int $x1)
+[command,.cc_setoppriority](int $x1)
+
+[command,cc_setopkey](int $x1, int $x2, int $x3, int $x4, int $x5, int $x6, int $x7, int $x8, int $x9, int $x10, int $x11)
+[command,.cc_setopkey](int $x1, int $x2, int $x3, int $x4, int $x5, int $x6, int $x7, int $x8, int $x9, int $x10, int $x11)
+
+[command,cc_setoptkey](int $x1, int $x2)
+[command,.cc_setoptkey](int $x1, int $x2)
+
+[command,cc_setopkeyrate](int $x1, int $x2, int $x3)
+[command,.cc_setopkeyrate](int $x1, int $x2, int $x3)
+
+[command,cc_setoptkeyrate](int $x1, int $x2)
+[command,.cc_setoptkeyrate](int $x1, int $x2)
+
+[command,cc_setopkeyignoreheld](int $x1)
+[command,.cc_setopkeyignoreheld](int $x1)
+
+[command,cc_setoptkeyignoreheld]
+[command,.cc_setoptkeyignoreheld]
+
+[command,cc_setonclick](hook $x1)
+[command,.cc_setonclick](hook $x1)
+
+[command,cc_setonhold](hook $x1)
+[command,.cc_setonhold](hook $x1)
+
+[command,cc_setonrelease](hook $x1)
+[command,.cc_setonrelease](hook $x1)
+
+[command,cc_setonmouseover](hook $x1)
+[command,.cc_setonmouseover](hook $x1)
+
+[command,cc_setonmouseleave](hook $x1)
+[command,.cc_setonmouseleave](hook $x1)
+
+[command,cc_setondrag](hook $x1)
+[command,.cc_setondrag](hook $x1)
+
+[command,cc_setontargetleave](hook $x1)
+[command,.cc_setontargetleave](hook $x1)
+
+[command,cc_setonvartransmit](varphook $x1)
+[command,.cc_setonvartransmit](varphook $x1)
+
+[command,cc_setontimer](hook $x1)
+[command,.cc_setontimer](hook $x1)
+
+[command,cc_setonop](hook $x1)
+[command,.cc_setonop](hook $x1)
+
+[command,cc_setondragcomplete](hook $x1)
+[command,.cc_setondragcomplete](hook $x1)
+
+[command,cc_setonclickrepeat](hook $x1)
+[command,.cc_setonclickrepeat](hook $x1)
+
+[command,cc_setonmouserepeat](hook $x1)
+[command,.cc_setonmouserepeat](hook $x1)
+
+[command,cc_setoninvtransmit](invhook $x1)
+[command,.cc_setoninvtransmit](invhook $x1)
+
+[command,cc_setonstattransmit](stathook $x1)
+[command,.cc_setonstattransmit](stathook $x1)
+
+[command,cc_setontargetenter](hook $x1)
+[command,.cc_setontargetenter](hook $x1)
+
+[command,cc_setonscrollwheel](hook $x1)
+[command,.cc_setonscrollwheel](hook $x1)
+
+[command,cc_setonchattransmit](hook $x1)
+[command,.cc_setonchattransmit](hook $x1)
+
+[command,cc_setonkey](hook $x1)
+[command,.cc_setonkey](hook $x1)
+
+[command,cc_setonfriendtransmit](hook $x1)
+[command,.cc_setonfriendtransmit](hook $x1)
+
+[command,cc_setonclantransmit](hook $x1)
+[command,.cc_setonclantransmit](hook $x1)
+
+[command,cc_setonmisctransmit](hook $x1)
+[command,.cc_setonmisctransmit](hook $x1)
+
+[command,cc_setondialogabort](hook $x1)
+[command,.cc_setondialogabort](hook $x1)
+
+[command,cc_setonsubchange](hook $x1)
+[command,.cc_setonsubchange](hook $x1)
+
+[command,cc_setonstocktransmit](hook $x1)
+[command,.cc_setonstocktransmit](hook $x1)
+
+[command,cc_setontradingposttransmit](hook $x1)
+[command,.cc_setontradingposttransmit](hook $x1)
+
+[command,cc_setonresize](hook $x1)
+[command,.cc_setonresize](hook $x1)
+
+[command,cc_setonclansettingstransmit](hook $x1)
+[command,.cc_setonclansettingstransmit](hook $x1)
+
+[command,cc_setonclanchanneltransmit](hook $x1)
+[command,.cc_setonclanchanneltransmit](hook $x1)
+
+[command,cc_setonkeydown](hook $x1)
+[command,.cc_setonkeydown](hook $x1)
+
+[command,cc_setonkeyup](hook $x1)
+[command,.cc_setonkeyup](hook $x1)
+
+[command,cc_setonmappre](hook $x1)
+[command,.cc_setonmappre](hook $x1)
+
+[command,cc_setonmappost](hook $x1)
+[command,.cc_setonmappost](hook $x1)
+
+[command,cc_crmview_setonupdated](hook $x1)
+[command,.cc_crmview_setonupdated](hook $x1)
+
+[command,cc_setonopt](hook $x1)
+[command,.cc_setonopt](hook $x1)
+
+[command,cc_input_setonfocuschanged](hook $x1)
+[command,.cc_input_setonfocuschanged](hook $x1)
+
+[command,cc_input_setonselect](hook $x1)
+[command,.cc_input_setonselect](hook $x1)
+
+[command,cc_input_setonsubmit](hook $x1)
+[command,.cc_input_setonsubmit](hook $x1)
+
+[command,cc_input_setonchange](hook $x1)
+[command,.cc_input_setonchange](hook $x1)
+
+[command,cc_getx]()(int)
+[command,.cc_getx]()(int)
+
+[command,cc_gety]()(int)
+[command,.cc_gety]()(int)
+
+[command,cc_getwidth]()(int)
+[command,.cc_getwidth]()(int)
+
+[command,cc_getheight]()(int)
+[command,.cc_getheight]()(int)
+
+[command,cc_gethide]()(boolean)
+[command,.cc_gethide]()(boolean)
+
+[command,cc_getlayer]()(component)
+[command,.cc_getlayer]()(component)
+
+[command,cc_getparentlayer]()(component)
+[command,.cc_getparentlayer]()(component)
+
+[command,cc_getscrollx]()(int)
+[command,.cc_getscrollx]()(int)
+
+[command,cc_getscrolly]()(int)
+[command,.cc_getscrolly]()(int)
+
+[command,cc_gettext]()(string)
+[command,.cc_gettext]()(string)
+
+[command,cc_getscrollwidth]()(int)
+[command,.cc_getscrollwidth]()(int)
+
+[command,cc_getscrollheight]()(int)
+[command,.cc_getscrollheight]()(int)
+
+[command,cc_getmodelzoom]()(int)
+[command,.cc_getmodelzoom]()(int)
+
+[command,cc_getmodelangle_x]()(int)
+[command,.cc_getmodelangle_x]()(int)
+
+[command,cc_getmodelangle_z]()(int)
+[command,.cc_getmodelangle_z]()(int)
+
+[command,cc_getmodelangle_y]()(int)
+[command,.cc_getmodelangle_y]()(int)
+
+[command,cc_gettrans]()(int)
+[command,.cc_gettrans]()(int)
+
+[command,cc_getblendtrans]()(int)
+[command,.cc_getblendtrans]()(int)
+
+[command,cc_getcolour]()(int)
+[command,.cc_getcolour]()(int)
+
+[command,cc_getblendcolour]()(int)
+[command,.cc_getblendcolour]()(int)
+
+[command,cc_getblendmode]()(int)
+[command,.cc_getblendmode]()(int)
+
+[command,cc_getmodeltransparent]()(boolean)
+[command,.cc_getmodeltransparent]()(boolean)
+
+[command,cc_getarcstart]()(int)
+[command,.cc_getarcstart]()(int)
+
+[command,cc_getarcend]()(int)
+[command,.cc_getarcend]()(int)
+
+[command,cc_input_getselectcolour]()(int)
+[command,.cc_input_getselectcolour]()(int)
+
+[command,cc_input_getselectbgcolour]()(int)
+[command,.cc_input_getselectbgcolour]()(int)
+
+[command,cc_input_getplaceholdertext]()(string)
+[command,.cc_input_getplaceholdertext]()(string)
+
+[command,cc_input_getplaceholdertextcolour]()(int)
+[command,.cc_input_getplaceholdertextcolour]()(int)
+
+[command,cc_input_getlinewrappingwidth]()(int)
+[command,.cc_input_getlinewrappingwidth]()(int)
+
+[command,cc_input_getlinecountlimit]()(int)
+[command,.cc_input_getlinecountlimit]()(int)
+
+[command,cc_input_getlinewidthlimit]()(int)
+[command,.cc_input_getlinewidthlimit]()(int)
+
+[command,cc_input_getfocus]()(boolean)
+[command,.cc_input_getfocus]()(boolean)
+
+[command,cc_input_getfocusable]()(boolean)
+[command,.cc_input_getfocusable]()(boolean)
+
+[command,cc_input_getselectiontext]()(string)
+[command,.cc_input_getselectiontext]()(string)
+
+[command,cc_input_getselectionbounds]()(int,int)
+[command,.cc_input_getselectionbounds]()(int,int)
+
+[command,cc_input_getcaretposition]()(int)
+[command,.cc_input_getcaretposition]()(int)
+
+[command,cc_input_getlinewrappingmode]()(int)
+[command,.cc_input_getlinewrappingmode]()(int)
+
+[command,cc_input_getsubmitmode]()(int)
+[command,.cc_input_getsubmitmode]()(int)
+
+[command,cc_input_getacceptmode]()(int)
+[command,.cc_input_getacceptmode]()(int)
+
+[command,cc_input_getcensormode]()(int)
+[command,.cc_input_getcensormode]()(int)
+
+[command,cc_input_getkeymode](int $x1)(int)
+[command,.cc_input_getkeymode](int $x1)(int)
+
+[command,cc_input_getcharmode](int $x1)(int)
+[command,.cc_input_getcharmode](int $x1)(int)
+
+[command,cc_getinvobject]()(obj)
+[command,.cc_getinvobject]()(obj)
+
+[command,cc_getinvcount]()(int)
+[command,.cc_getinvcount]()(int)
+
+[command,cc_getid]()(int)
+[command,.cc_getid]()(int)
+
+[command,cc_param](param $param)(any)
+[command,.cc_param](param $param)(any)
+
+[command,cc_setparam](param $param, any $value)
+[command,.cc_setparam](param $param, any $value)
+
+[command,cc_crmview_gethasresponse]()(boolean)
+[command,.cc_crmview_gethasresponse]()(boolean)
+
+[command,cc_crmview_getint](string $x1)(int)
+[command,.cc_crmview_getint](string $x1)(int)
+
+[command,cc_crmview_getstring](string $x1)(string)
+[command,.cc_crmview_getstring](string $x1)(string)
+
+[command,cc_gettargetmask]()(int)
+[command,.cc_gettargetmask]()(int)
+
+[command,cc_getop](int $x1)(string)
+[command,.cc_getop](int $x1)(string)
+
+[command,cc_getopbase]()(string)
+[command,.cc_getopbase]()(string)
+
+[command,cc_callonresize]
+[command,.cc_callonresize]
+
+[command,cc_triggerop](int $x1)
+[command,.cc_triggerop](int $x1)
+
+[command,if_setposition](int $x, int $y, int $modeh, int $modev, component $component)
+
+[command,if_setsize](int $width, int $height, int $modeh, int $modev, component $x5)
+
+[command,if_sethide](boolean $x1, component $x2)
+
+[command,if_setnoclickthrough](boolean $x1, component $x2)
+
+[command,if_setnoscrollthrough](boolean $x1, component $x2)
+
+[command,if_setscrollpos](int $x1, int $x2, component $x3)
+
+[command,if_setcolour](int $x1, component $x2)
+
+// For us Americans
+[command,if_setcolor](int $x1, component $x2)
+
+[command,if_setfill](boolean $x1, component $x2)
+
+[command,if_settrans](int $x1, component $x2)
+
+[command,if_setlinewid](int $x1, component $x2)
+
+[command,if_setgraphic](graphic $x1, component $x2)
+
+[command,if_set2dangle](int $x1, component $x2)
+
+[command,if_settiling](boolean $x1, component $x2)
+
+[command,if_setmodel](model $x1, component $x2)
+
+[command,if_setmodelangle](int $x1, int $x2, int $x3, int $x4, int $x5, int $x6, component $x7)
+
+[command,if_setmodelanim](seq $x1, component $x2)
+
+[command,if_setmodelorthog](boolean $x1, component $x2)
+
+[command,if_settext](string $x1, component $x2)
+
+[command,if_settextfont](graphic $x1, component $x2)
+
+[command,if_settextalign](int $h, int $v, int $x3, component $component)
+
+[command,if_settextshadow](boolean $x1, component $x2)
+
+[command,if_setoutline](int $x1, component $x2)
+
+[command,if_setgraphicshadow](int $x1, component $x2)
+
+[command,if_setvflip](boolean $x1, component $x2)
+
+[command,if_sethflip](boolean $x1, component $x2)
+
+[command,if_setscrollsize](int $x1, int $x2, component $x3)
+
+[command,if_resume_pausebutton](component $x1)
+
+[command,if_setclickmask](graphic $x1, component $x2)
+
+[command,if_setblendcolour](int $x1, component $x2)
+
+[command,if_setblendtrans](int $x1, component $x2)
+
+[command,if_setblendmode](int $x1, component $x2)
+
+[command,if_setlinedirection](boolean $x1, component $x2)
+
+[command,if_setmodeltransparent](boolean $x1, component $x2)
+
+[command,if_setarc](int $x1, int $x2, component $x3)
+
+[command,if_sethttpsprite](string $x1, component $x2)
+
+[command,if_crmview_init](string $x1, component $x2)
+
+[command,if_crmview_settextfont](int $x1, graphic $x2, component $x3)
+
+[command,if_crmview_setservertargets](string $x1, int $x2, component $x3)
+
+[command,if_input_setselectcolour](int $x1, component $x2)
+
+[command,if_input_setselectbgcolour](int $x1, component $x2)
+
+[command,if_input_setplaceholdertext](string $x1, component $x2)
+
+[command,if_input_setplaceholdertextcolour](int $x1, component $x2)
+
+[command,if_input_setlinewrappingwidth](int $x1, component $x2)
+
+[command,if_input_setlinecountlimit](int $x1, component $x2)
+
+[command,if_input_setlinewidthlimit](int $x1, component $x2)
+
+[command,if_input_setfocus](boolean $x1, component $x2)
+
+[command,if_input_setfocusable](boolean $x1, component $x2)
+
+[command,if_input_setselection](int $x1, int $x2, component $x3)
+
+[command,if_input_setcaret](int $x1, component $x2)
+
+[command,if_input_setwrapmode](int $x1, component $x2)
+
+[command,if_input_setsubmitmode](int $x1, component $x2)
+
+[command,if_input_setacceptmode](int $x1, component $x2)
+
+[command,if_input_setcensormode](int $x1, component $x2)
+
+[command,if_input_setkeymode](int $x1, int $x2, component $x3)
+
+[command,if_input_setcharmode](char $x1, int $x2, component $x3)
+
+[command,if_crmview_setjson](string $x1, component $x2)
+
+[command,if_setobject](obj $x1, int $x2, component $x3)
+
+[command,if_setnpchead](npc $x1, component $x2)
+
+[command,if_setplayerhead_self](component $x1)
+
+[command,if_setobject_nonum](obj $x1, int $x2, component $x3)
+
+[command,if_setplayermodel_self](boolean $x1, component $x2)
+
+[command,if_setplayermodel_obj](obj $x1, component $x2)
+
+[command,if_setplayermodel_basecolour](int $x1, int $x2, component $x3)
+
+[command,if_setplayermodel_bodytype](int $x1, component $x2)
+
+[command,if_setobject_alwaysnum](obj $x1, int $x2, component $x3, component $x4)
+
+[command,if_setobject_nummode](obj $x1, int $x2, int $x3, component $x4)
+
+[command,if_setlocmodel](loc $x1, component $x4)
+
+[command,if_setnpcmodel](npc $x1, component $x4)
+
+[command,if_setop](int $x1, string $x2, component $x3)
+
+[command,if_setdraggable](component $x1, int $x2, component $x3)
+
+[command,if_setdragrenderbehaviour](int $x1, component $x2)
+
+[command,if_setdragdeadzone](int $x1, component $x2)
+
+[command,if_setdragdeadtime](int $x1, component $x2)
+
+[command,if_setopbase](string $x1, component $x2)
+
+[command,if_settargetverb](string $x1, component $x2)
+
+[command,if_clearops](component $x1)
+
+[command,if_setalwaysleftclick](boolean $x1, component $x2)
+
+[command,if_setpinch](boolean $x1, component $x2)
+
+[command,if_clearsubops](int $index, component $x2)
+
+[command,if_setsubop](int $index, int $subindex, string $op, component $x4)
+
+[command,if_setoppriority](int $x1, component $x2)
+
+[command,if_setopkey](int $x1, int $x2, int $x3, component $x4)
+
+[command,if_setoptkey](int $x1, int $x2, component $x3)
+
+[command,if_setopkeyrate](int $x1, int $x2, int $x3, component $x4)
+
+[command,if_setoptkeyrate](int $x1, int $x2, component $x3)
+
+[command,if_setopkeyignoreheld](int $x1, component $x2)
+
+[command,if_setoptkeyignoreheld](component $x1)
+
+[command,if_setonclick](hook $x1, component $x2)
+
+[command,if_setonhold](hook $x1, component $x2)
+
+[command,if_setonrelease](hook $x1, component $x2)
+
+[command,if_setonmouseover](hook $x1, component $x2)
+
+[command,if_setonmouseleave](hook $x1, component $x2)
+
+[command,if_setondrag](hook $x1, component $x2)
+
+[command,if_setontargetleave](hook $x1, component $x2)
+
+[command,if_setonvartransmit](varphook $x1, component $x2)
+
+[command,if_setontimer](hook $x1, component $x2)
+
+[command,if_setonop](hook $x1, component $x2)
+
+[command,if_setondragcomplete](hook $x1, component $x2)
+
+[command,if_setonclickrepeat](hook $x1, component $x2)
+
+[command,if_setonmouserepeat](hook $x1, component $x2)
+
+[command,if_setoninvtransmit](invhook $x1, component $x2)
+
+[command,if_setonstattransmit](stathook $x1, component $x2)
+
+[command,if_setontargetenter](hook $x1, component $x2)
+
+[command,if_setonscrollwheel](hook $x1, component $x2)
+
+[command,if_setonchattransmit](hook $x1, component $x2)
+
+[command,if_setonkey](hook $x1, component $x2)
+
+[command,if_setonfriendtransmit](hook $x1, component $x2)
+
+[command,if_setonclantransmit](hook $x1, component $x2)
+
+[command,if_setonmisctransmit](hook $x1, component $x2)
+
+[command,if_setondialogabort](hook $x1, component $x2)
+
+[command,if_setonsubchange](hook $x1, component $x2)
+
+[command,if_setonstocktransmit](hook $x1, component $x2)
+
+[command,if_setontradingposttransmit](hook $x1, component $x2)
+
+[command,if_setonresize](hook $x1, component $x2)
+
+[command,if_setonclansettingstransmit](hook $x1, component $x2)
+
+[command,if_setonclanchanneltransmit](hook $x1, component $x2)
+
+[command,if_setonkeydown](hook $x1, component $x2)
+
+[command,if_setonkeyup](hook $x1, component $x2)
+
+[command,if_setonmappre](hook $x1, component $x2)
+
+[command,if_setonmappost](hook $x1, component $x2)
+
+[command,if_crmview_setonupdated](hook $x1, component $x2)
+
+[command,if_setonopt](hook $x1, component $x2)
+
+[command,if_input_setonfocuschanged](hook $x1, component $x2)
+
+[command,if_input_setonselect](hook $x1, component $x2)
+
+[command,if_input_setonsubmit](hook $x1, component $x2)
+
+[command,if_input_setonchange](hook $x1, component $x2)
+
+[command,if_getx](component $x1)(int)
+
+[command,if_gety](component $x1)(int)
+
+[command,if_getwidth](component $x1)(int)
+
+[command,if_getheight](component $x1)(int)
+
+[command,if_gethide](component $x1)(boolean)
+
+[command,if_getlayer](component $x1)(component)
+
+[command,if_getparentlayer](component $x1)(component)
+
+[command,if_getscrollx](component $x1)(int)
+
+[command,if_getscrolly](component $x1)(int)
+
+[command,if_gettext](component $x1)(string)
+
+[command,if_getscrollwidth](component $x1)(int)
+
+[command,if_getscrollheight](component $x1)(int)
+
+[command,if_getmodelzoom](component $x1)(int)
+
+[command,if_getmodelangle_x](component $x1)(int)
+
+[command,if_getmodelangle_z](component $x1)(int)
+
+[command,if_getmodelangle_y](component $x1)(int)
+
+[command,if_gettrans](component $x1)(int)
+
+[command,if_getblendrans](component $x1)(int)
+
+[command,if_getcolour](component $x1)(int)
+
+[command,if_getblendcolour](component $x1)(int)
+
+[command,if_getblendmode](component $x1)(int)
+
+[command,if_getmodeltransparent](component $x1)(boolean)
+
+[command,if_getarcstart](component $x1)(int)
+
+[command,if_getarcend](component $x1)(int)
+
+[command,if_input_getselectcolour](component $x1)(int)
+
+[command,if_input_getselectbgcolour](component $x1)(int)
+
+[command,if_input_getplaceholdertext](component $x1)(string)
+
+[command,if_input_getplaceholdertextcolour](component $x1)(int)
+
+[command,if_input_getlinewrappingwidth](component $x1)(int)
+
+[command,if_input_getlinecountlimit](component $x1)(int)
+
+[command,if_input_getlinewidthlimit](component $x1)(int)
+
+[command,if_input_getfocus](component $x1)(boolean)
+
+[command,if_input_getfocusable](component $x1)(boolean)
+
+[command,if_input_getselectiontext](component $x1)(string)
+
+[command,if_input_getselectionbounds](component $x1)(int,int)
+
+[command,if_input_getcaretposition](component $x1)(int)
+
+[command,if_input_getlinewrappingmode](component $x1)(int)
+
+[command,if_input_getsubmitmode](component $x1)(int)
+
+[command,if_input_getacceptmode](component $x1)(int)
+
+[command,if_input_getcensormode](component $x1)(int)
+
+[command,if_input_getkeymode](int $x1, component $x2)(int)
+
+[command,if_input_getcharmode](int $x1, component $x2)(int)
+
+[command,if_getinvobject](component $x1)(obj)
+
+[command,if_getinvcount](component $x1)(int)
+
+[command,if_hassub](component $x1)(boolean)
+
+[command,if_param](param $param, component $comp, int $subid)(any)
+
+[command,if_setparam](param $param, any $value, component $comp, int $subid)
+
+[command,if_gettop]()(toplevelinterface)
+
+[command,if_crmview_gethasresponse](component $x1)(boolean)
+
+[command,if_crmview_getint](string $x1, component $x2)(int)
+
+[command,if_crmview_getstring](string $x1, component $x2)(string)
+
+[command,if_gettargetmask](component $x1)(int)
+
+[command,if_getop](int $x1, component $x2)(string)
+
+[command,if_getopbase](component $x1)(string)
+
+[command,if_callonresize](component $x1)
+
+[command,if_triggerop](component $x1, int $x2, int $x3)
+
+[command,if_runscript*](int $id, component $comp, int $subid)

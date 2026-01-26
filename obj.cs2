@@ -1,0 +1,27 @@
+[command,obj_name]()(string)
+
+[command,obj_coord]()(coord)
+
+[command,obj_type]()(obj)
+
+[command,obj_count]()(int)
+
+[command,obj_find](coord $x1, obj $x2)(boolean)
+
+[command,obj_getopbase](boolean $x1)(string)
+
+[command,obj_getop](int $x1, boolean $x2)(string)
+
+[command,oc_getopbase](obj $x1, boolean $x2)(string)
+
+[command,oc_getop](obj $x1, int $x2, boolean $x3)(string)
+
+[command,obj_findbyindex](coord $x1, int $x2)(boolean)
+
+[command,obj_despawntime]()(int)
+
+[command,obj_revealtime]()(int)
+
+[command,obj_revealed]()(boolean)
+
+[command,obj_owner]()(int)

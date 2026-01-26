@@ -1,0 +1,47 @@
+[command,chat_getfilter_public]()(int)
+
+[command,chat_setfilter](int $x1, int $x2, int $x3)
+
+[command,chat_sendabusereport](string $x1, int $x2, boolean $x3)
+
+[command,chat_gethistorymessage](int $x1)(string)
+
+[command,chat_gethistory_bytypeandline](int $x1, int $x2)(int,int,string,string,string,int,string,int)
+
+[command,chat_gethistorytype](int $x1)(int)
+
+[command,chat_gethistory_byuid](int $x1)(int,int,string,string,string,int,string,int)
+
+[command,chat_getfilter_private]()(int)
+
+[command,chat_sendpublic](string $x1, int $x2)
+
+[command,chat_sendprivate](string $x1, string $x2)
+
+[command,chat_gethistoryname](int $x1)(string)
+
+[command,chat_sendclan](string $x1, int $x2, int $x3)
+
+[command,chat_gethistoryclan](int $x1)(string)
+
+[command,chat_playername]()(string)
+
+[command,chat_getfilter_trade]()(int)
+
+[command,chat_gethistorylength](int $x1)(int)
+
+[command,chat_getnextuid](int $x1)(int)
+
+[command,chat_getprevuid](int $x1)(int)
+
+[command,docheat](string $x1)
+
+[command,chat_setmessagefilter](string $x1)
+
+[command,chat_getmessagefilter]()(string)
+
+[command,writeconsole](string $x1)
+
+[command,chat_settimestamps](int $x1)
+
+[command,chat_gettimestamps]()(int)

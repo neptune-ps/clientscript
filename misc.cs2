@@ -1,0 +1,339 @@
+[command,mes](string $x1)
+
+[command,anim](seq $x1, int $x2)
+
+[command,mes_typed](int $x1, string $x2)
+
+[command,if_close]
+
+[command,resume_countdialog](string $x1)
+
+[command,resume_namedialog](string $x1)
+
+[command,resume_stringdialog](string $x1)
+
+[command,opplayer](int $x1, string $x2)
+
+[command,if_dragpickup](component $x1, int $x2, int $x3)
+
+[command,cc_dragpickup](int $x1, int $x2)
+
+[command,setmousecam](boolean $x1)
+
+[command,getremoveroofs]()(boolean)
+
+[command,setremoveroofs](boolean $x1)
+
+[command,openurl](string $x1, boolean $x2)
+
+[command,resume_objdialog](obj $x1)
+
+[command,bug_report](bugtemplate $x1, string $x2, string $x3)
+
+[command,setshiftclickenabled](boolean $x1)
+
+[command,setshowmouseovertext](boolean $x1)
+
+[command,renderself](boolean $x1)
+
+[command,setdrawplayernames_friends](boolean $x1)
+
+[command,setdrawplayernames_clanmates](boolean $x1)
+
+[command,setdrawplayernames_others](boolean $x1)
+
+[command,setdrawplayernames_self](boolean $x1)
+
+[command,resetdrawplayernames]
+
+[command,setshowmousecross](boolean $x1)
+
+[command,setshowloadingmessages](boolean $x1)
+
+[command,setsimulatedshiftactive](boolean $x1)
+
+[command,getsimulatedshiftactive]()(boolean)
+
+[command,setfreecamspeed](int $x1, int $x2)
+
+[command,setfeedbacksprite](graphic $graphic, boolean $transparency)
+
+[command,setfeedbackshowpopuptext](boolean $x1)
+
+[command,getcanvassize]()(int, int)
+
+[command,mobile_setfps](int $x1)
+
+[command,shop_open]
+
+[command,shop_opensubset](int $x1, boolean $x2)
+
+[command,setkeyinputmode_component](boolean $x1)
+
+[command,setkeyinputmode_interface](boolean $x1)
+
+[command,setkeyinputmode_all]
+
+[command,setkeyinputmode_none]
+
+[command,setkeyinputmode_activecomponent]
+
+[command,sethideusername](boolean $x1)
+
+[command,gethideusername]()(boolean)
+
+[command,setrememberusername](boolean $x1)
+
+[command,getrememberusername]()(boolean)
+
+[command,show_ios_review]
+
+//[command,setmutetitlescreen]
+
+//[command,getmutetitlescreen]
+
+//[command,settermsandprivacy]
+
+//[command,gettermsandprivacy]
+
+//[command,unknown_command_3150]
+
+//[command,unknown_command_3151]
+
+//[command,unknown_command_3152]
+
+//[command,unknown_command_3153]
+
+//[command,unknown_command_3154]
+
+//[command,shop_purchaseitem]
+
+//[command,shop_requestdata]
+
+[command,shop_opencategories](int $x1, int $x2)
+
+//[command,shop_purchaseitemstatus]
+
+//[command,shop_requestdatastatus]
+
+//[command,shop_getcategorycount]
+
+//[command,shop_getcategoryid]
+
+//[command,shop_getindexforcategoryid]
+
+//[command,shop_getindexforcategoryname]
+
+//[command,shop_getcategorydescription]
+
+//[command,shop_getproductcount]
+
+//[command,shop_isproductavailable]
+
+//[command,shop_isproductrecommended]
+
+//[command,shop_getproductdetails]
+
+//[command,unknown_command_3169]
+
+[command,notifications_sendlocal](string $x1, string $x2, int $x3, int $x4)(int)
+
+//[command,notifications_sendgroupedlocal]
+
+//[command,notifications_cancellocal]
+
+//[command,notifications_islocalscheduled]
+
+//[command,unknown_command_3174]
+
+//[command,notifications_getenabled]
+
+//[command,unknown_command_3176]
+
+[command,marketing_initanalytics]
+
+[command,marketing_sendanalyticsevent](string $x1)
+
+[command,marketing_initattribution]
+
+[command,marketing_sendattributionevent](string $x1)
+
+[command,setbrightness](int $x1)
+
+[command,getbrightness]()(int)
+
+[command,setantidrag](boolean $x1)
+
+[command,getantidrag]()(boolean)
+
+[command,setdrawdistance](int $x1)
+
+[command,getdrawdistance]()(int)
+
+//[command,unknown_command_3187]
+
+//[command,unknown_command_3188]
+
+[command,seq_prefetch](seq $x1)
+
+[command,sound_synth](synth $x1, int $x2, int $x3)
+
+[command,sound_song](midi $x1)
+
+[command,sound_jingle](midi $x1, int $x2)
+
+[command,setvolumemusic](int $x1)
+
+[command,getvolumemusic]()(int)
+
+[command,setvolumesounds](int $x1)
+
+[command,getvolumesounds]()(int)
+
+[command,setvolumeareasounds](int $x1)
+
+[command,getvolumeareasounds]()(int)
+
+[command,clientoption_set](int $x1, int $x2)
+
+[command,clientoption_get](int $x1)(int)
+
+[command,unknown_command_3211]
+
+[command,deviceoption_set](int $x1, int $x2)
+
+[command,gameoption_set](int $x1, int $x2)
+
+[command,deviceoption_get](int $x1)(int)
+
+[command,gameoption_get](int $x1)(int)
+
+[command,deviceoption_exists](int $x1)(boolean)
+
+[command,deviceoption_getrange](int $x1)(int, int)
+
+[command,gameoption_exists](int $x1)(boolean)
+
+[command,gameoption_getrange](int $x1)(int, int)
+
+[command,midi_stop](int $fade_out_delay, int $fade_out_speed)
+
+[command,midi_song_withsecondary](midi $song, midi $secondary, int $fade_out_delay, int $fade_out_speed, int $fade_in_delay)
+
+[command,midi_song](midi $song, int $fade_out_delay, int $fade_out_speed, int $fade_in_delay)
+
+[command,rt7_setenabled](boolean $x1)
+
+[command,rt7_sd]
+
+[command,rt7_hd]
+
+[command,unknown_command_3226](boolean $x1)
+
+[command,clientclock]()(int)
+
+[command,inv_getobj](inv $x1, int $x2)(obj)
+
+[command,inv_getnum](inv $x1, int $x2)(int)
+
+[command,inv_total](inv $x1, obj $x2)(int)
+
+[command,inv_size](inv $x1)(int)
+
+[command,stat](stat $x1)(int)
+
+[command,stat_base](stat $x1)(int)
+
+[command,stat_visible_xp](stat $x1)(int)
+
+[command,coord]()(coord)
+
+[command,coordx](coord $x1)(int)
+
+[command,coordy](coord $x1)(int)
+
+[command,coordz](coord $x1)(int)
+
+[command,map_members]()(boolean)
+
+[command,invother_getobj](inv $x1, int $x2)(obj)
+
+[command,invother_getnum](inv $x1, int $x2)(int)
+
+[command,invother_total](inv $x1, obj $x2)(int)
+
+[command,staffmodlevel]()(int)
+
+[command,reboottimer]()(int)
+
+[command,map_world]()(int)
+
+[command,runenergy_visible]()(int)
+
+[command,runweight_visible]()(int)
+
+[command,playermod]()(int)
+
+[command,worldflags]()(int)
+
+[command,movecoord](coord $x1, int $x2, int $x3, int $x4)(coord)
+
+[command,mouse_getx]()(int)
+
+[command,mouse_gety]()(int)
+
+[command,idletimer_get]()(int)
+
+[command,idletimer_reset]
+
+[command,destinationcoord]()(coord)
+
+[command,runenergy]
+
+[command,stat_unknown](stat $x1)(int)
+
+[command,unknown_command_3333]()(string)
+
+[command,worldlist_fetch]()(boolean)
+
+[command,worldlist_start]()(int, int, string, int, int, string)
+
+[command,worldlist_next]()(int, int, string, int, int, string)
+
+[command,worldlist_specific](int $x1)(int, int, string, int, int, string)
+
+[command,worldlist_sort](int $x1, boolean $x2, int $x3, boolean $x4)
+
+[command,unknown_command_6511](int $x1)(int, int, string, int, int, string)
+
+[command,setfolloweropslowpriority](boolean $x1)
+
+[command,nc_param](npc $npc, param $param)(any)
+
+[command,lc_param](loc $loc, param $param)(any)
+
+[command,oc_param](obj $obj, param $param)(any)
+
+[command,struct_param](struct $struct, param $param)(any)
+
+[command,on_mobile]()(boolean)
+
+[command,clienttype]()(int)
+
+[command,mobile_keyboardshow]
+
+[command,mobile_keyboardhide]
+
+[command,mobile_keyboardshowstring](string $x1, int $x2)
+
+[command,mobile_keyboardshowinteger](string $x1, int $x2)
+
+[command,mobile_batterylevel]()(int)
+
+[command,mobile_batterycharging]()(boolean)
+
+[command,mobile_wifiavailable]()(boolean)
+
+[command,platformtype]()(int)
+
+[command,haptic](int $x1)

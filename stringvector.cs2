@@ -1,0 +1,19 @@
+[command,stringvector_add](stringvector $vector, string $string)
+
+[command,stringvector_addunique](stringvector $vector, string $string, boolean $case_sensitive)
+
+[command,stringvector_insert](stringvector $vector, int $index, string $string)
+
+[command,stringvector_set](stringvector $vector, int $index, string $string)
+
+[command,stringvector_remove](stringvector $vector, string $string, boolean $case_sensitive)
+
+[command,stringvector_removeat](stringvector $vector, int $index)
+
+[command,stringvector_get](stringvector $vector, int $index)(string)
+
+[command,stringvector_size](stringvector $vector)(int)
+
+[command,stringvector_contains](stringvector $vector, string $string, boolean $wildcard, boolean $case_sensitive)(boolean)
+
+[command,stringvector_clear](stringvector $vector)

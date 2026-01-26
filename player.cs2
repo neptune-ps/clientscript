@@ -1,0 +1,15 @@
+[command,p_name]()(string)
+
+[command,p_findself]()(boolean)
+
+[command,p_routelength]()(int)
+
+[command,p_route](int $x1)(coord)
+
+[command,uid]()(player_uid)
+
+[command,self_player_uid]()(player_uid)
+
+[command,p_say](string $text,int $duration)
+
+[command,p_getop](int $x1,boolean $x2)(string)

@@ -1,0 +1,7 @@
+[command,logout]
+
+[command,federated_login](string $x1, string $x2)
+
+[command,federated_login_state]()(int)
+
+[command,federated_shop](string $x1, string $x2)

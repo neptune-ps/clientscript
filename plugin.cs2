@@ -1,0 +1,65 @@
+[command,plugin_query](int $offset, int $limit)
+
+[command,plugin_query_get](int $index)(int)
+
+[command,plugin_query_set_sort](int $column)
+
+[command,plugin_query_count]()(int)
+
+[command,plugin_name](int $id)(string)
+
+[command,plugin_name_id](int $id)(string)
+
+[command,unknown_command_8306]()(int)
+
+[command,plugin_installed](int $id)(boolean)
+
+[command,plugin_install](int $id)(boolean)
+
+[command,plugin_uninstall](int $id)(boolean)
+
+[command,unknown_command_8310]()(int)
+
+[command,unknown_command_8311]()(int)
+
+[command,unknown_command_8312](int $x1)(int)
+
+[command,unknown_command_8313](int $x1)(int)
+
+[command,plugin_enabled](int $id)(boolean)
+
+[command,plugin_enable](int $id)(int)
+
+[command,plugin_disable](int $id)(int)
+
+[command,plugin_submitted_by](int $id)(string)
+
+[command,plugin_summary](int $id)(string)
+
+[command,plugin_logo](int $id)(string)
+
+[command,plugin_outdated](int $id)(int)
+
+[command,plugin_version](int $id)(string)
+
+[command,plugin_version_installed](int $id)(string)
+
+[command,plugin_query_set_installed_only](boolean $x1)
+
+[command,plugin_query_add_tag](string $x1)
+
+[command,plugin_query_set_tag](string $x1)
+
+[command,plugin_query_del_tag](string $x1)
+
+[command,plugin_query_clear_tags]
+
+[command,plugin_query_add_term](int $x1, string $x2)
+
+[command,plugin_query_set_term](int $x1, string $x2)
+
+[command,plugin_query_del_term](int $x1)
+
+[command,plugin_query_clear_terms]
+
+[command,plugin_query_status]()(int)

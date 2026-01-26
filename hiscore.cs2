@@ -1,0 +1,49 @@
+[command,hiscore_lookup](string $name, int $type)
+
+[command,hiscore_getrank](string $key)(int)
+
+[command,hiscore_getvalue](string $key)(int)
+
+[command,hiscore_getskillrank](int $key)(int)
+
+[command,hiscore_getgamerank](int $key)(int)
+
+[command,hiscore_getskillxp](int $key)(int)
+
+[command,hiscore_getgamecompletions](int $key)(int)
+
+[command,hiscore_getoverallrank]()(int)
+
+[command,hiscore_getoverallxp]()(int, int)
+
+[command,hiscore_getstatus]()(int)
+
+[command,hiscore_clear]
+
+[command,hiscore_geterror]()(string)
+
+[command,hiscore_setapi](int $value)
+
+[command,hiscore_getbossrank](varp $key)(int)
+
+[command,hiscore_getbosskills](varp $key)(int)
+
+[command,hiscore_getgrouptotallevel]()(int)
+
+[command,hiscore_getgrouptotalxp]()(int)
+
+[command,hiscore_getgroupsize]()(int)
+
+[command,hiscore_getmembercount]()(int)
+
+[command,hiscore_getmemberlevel](string $member)(int)
+
+[command,hiscore_getmembercontributedxp_byname](string $member)(int)
+
+[command,hiscore_getmemberlevel_byindex](int $member)(int)
+
+[command,hiscore_getmembercontributedxp_byindex](int $member)(int)
+
+[command,hiscore_getmembername](int $x1)(string)
+
+[command,hiscore_getmemberhiscores](int $x1)

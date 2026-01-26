@@ -1,0 +1,95 @@
+[command,worldmap_jumptoplayer]
+
+[command,worldmap_getmapname](wma $x1)(string)
+
+[command,worldmap_setmap](wma $x1)
+
+[command,worldmap_getzoom]()(int)
+
+[command,worldmap_setzoom](int $x1)
+
+[command,worldmap_isloaded]()(boolean)
+
+[command,worldmap_jumptodisplaycoord](coord $x1)
+
+[command,worldmap_jumptodisplaycoord_instant](coord $x1)
+
+[command,worldmap_jumptosourcecoord](coord $x1)
+
+[command,worldmap_jumptosourcecoord_instant](coord $x1)
+
+[command,worldmap_getdisplayposition]()(int, int)
+
+[command,worldmap_getconfigorigin](wma $x1)(int)
+
+[command,worldmap_getconfigsize](wma $x1)(int, int)
+
+[command,worldmap_getconfigbounds](wma $x1)(int, int, int, int)
+
+[command,worldmap_getconfigzoom](wma $x1)(int)
+
+[command,worldmap_getsourceposition]()(int, int)
+
+[command,worldmap_getcurrentmap]()(wma)
+
+[command,worldmap_getdisplaycoord](coord $x1)(int, int)
+
+[command,worldmap_getsourcecoord](coord $x1)(int, int)
+
+[command,worldmap_setmap_coord](wma $x1, coord $x2)
+
+[command,worldmap_setmap_coord_override](wma $x1, coord $x2)
+
+[command,worldmap_coordinmap](wma $x1, coord $x2)(boolean)
+
+[command,worldmap_getsize]()(int, int)
+
+[command,worldmap_getmap](coord $x1)(wma)
+
+[command,worldmap_setflashloops](int $x1)
+
+[command,worldmap_setflashloops_default]
+
+[command,worldmap_setflashtics](int $x1)
+
+[command,worldmap_setflashtics_default]
+
+[command,worldmap_perpetualflash](boolean $x1)
+
+[command,worldmap_flashelement](mapelement $x1)
+
+[command,worldmap_flashelementcategory](category $x1)
+
+[command,worldmap_stopcurrentflashes]
+
+[command,worldmap_disableelements](boolean $x1)
+
+[command,worldmap_disableelement](int $x1, boolean $x2)
+
+[command,worldmap_disableelementcategory](category $x1, boolean $x2)
+
+[command,worldmap_getdisableelements]()(boolean)
+
+[command,worldmap_getdisableelement](mapelement $x1)(boolean)
+
+[command,worldmap_getdisableelementcategory](category $x1)(boolean)
+
+[command,worldmap_findnearestelement](mapelement $x1, coord $x2)(int)
+
+[command,worldmap_listelement_start]()(mapelement, coord)
+
+[command,worldmap_listelement_next]()(mapelement, coord)
+
+[command,mec_text](mapelement $x1)(string)
+
+[command,mec_textsize](mapelement $x1)(int)
+
+[command,mec_category](mapelement $x1)(category)
+
+[command,mec_sprite](mapelement $x1)(int)
+
+[command,mel_type]()(mapelement)
+
+[command,mel_sourcecoord]()(coord)
+
+[command,mel_displaycoord]()(coord)

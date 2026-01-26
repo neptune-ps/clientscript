@@ -1,0 +1,29 @@
+[command,minimap_setzoomable](boolean $x1)
+
+[command,minimap_getzoomable]()(boolean)
+
+[command,minimap_setzoom](int $x1)
+
+[command,minimap_getzoom]()(int)
+
+[command,minimap_seticonzoomlimit](int $x1)
+
+[command,minimap_geticonzoomlimit]()(int)
+
+[command,minimap_redraw]
+
+[command,minimap_setdotstyle](int $x1, int $x2, int $x3, int $x4)
+
+[command,minimap_getdotstyle](int $x1)(int, int, int)
+
+[command,minimap_setdotvisible](int $x1, boolean $x2)
+
+[command,minimap_getdotvisible](int $x1)(boolean)
+
+[command,unknown_command_7261](boolean $x1)
+
+[command,unknown_command_7262]()(boolean)
+
+[command,minimap_setdrawdisplayname](int $x1, boolean $x2)
+
+[command,minimap_getdrawdisplayname](int $x1)(boolean)

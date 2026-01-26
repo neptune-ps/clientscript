@@ -1,0 +1,15 @@
+[command,db_find]/*(dbcolumn $column, any $key)(int)*/
+
+[command,db_findnext]()(dbrow)
+
+[command,db_getfield]/*(dbrow $row, dbcolumn $column, int $field)(any)*/
+
+[command,db_getfieldcount](dbrow $x1, dbcolumn $x2)(int)
+
+[command,db_listall](dbtable $x1)(int)
+
+[command,db_getrowtable](dbrow $x1)(dbtable)
+
+[command,db_find_get](int $x1)(dbrow)
+
+[command,db_find_refine]/*(dbcolumn $column, any $key)(int)*/

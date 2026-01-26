@@ -1,0 +1,7 @@
+[command,uizoom_set](int $x1)
+
+[command,uizoom_get]()(int)
+
+[command,uizoom_reset]
+
+[command,uizoom_setmode](int $x1)

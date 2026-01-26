@@ -1,0 +1,65 @@
+[command,minimenu_type]()(int)
+
+[command,minimenu_entry]()(string,string)
+
+[command,minimenu_findnpc]()(boolean)
+
+[command,minimenu_findloc]()(boolean)
+
+[command,minimenu_findobj]()(boolean)
+
+[command,minimenu_findplayer]()(boolean)
+
+[command,minimenu_coord]()(coord)
+
+[command,minimenu_objtype]()(obj)
+
+[command,minimenu_isopen]()(boolean)
+
+[command,minimenu_findcomponent]()(boolean)
+
+[command,minimenu_numops]()(int)
+
+[command,minimenu_numentries]()(int)
+
+[command,minimenu_typeat](int $index)(int)
+
+[command,minimenu_entryat](int $index)(string,string)
+
+[command,minimenu_findnpcat](int $index)(boolean)
+
+[command,minimenu_findlocat](int $index)(boolean)
+
+[command,minimenu_findobjat](int $index)(boolean)
+
+[command,minimenu_findplayerat](int $index)(boolean)
+
+[command,minimenu_coordat](int $index)(coord)
+
+[command,minimenu_objtypeat](int $index)(obj)
+
+[command,minimenu_findcomponentat](int $index)(boolean)
+
+[command,minimenu_hovered_index]()(int)
+
+[command,minimenu_setaddmode](int $kind, int $mode)
+
+[command,minimenu_setblockmode](int $kind, int $mode)
+
+[command,minimenu_setsingleclick](boolean $x1)
+
+[command,minimenu_setprioritymode](int $kind, int $mode)
+
+[command,minimenu_resetorder]
+
+[command,minimenu_setorderedit](int $x1)
+
+[command,minimenu_getorderedit]()(int)
+
+[command,minimenu_setscrollheight](int $x1)
+
+[command,minimenu_getscrollheight]()(int)
+
+[command,minimenu_togglescroll]
+
+[command,minimenu_getscroll]()(int)

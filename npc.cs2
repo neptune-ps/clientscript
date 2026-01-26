@@ -1,0 +1,31 @@
+[command,npc_name]()(string)
+
+[command,npc_uid]()(npc_uid)
+
+[command,npc_creationcycle]()(int)
+
+[command,npc_type]()(npc)
+
+[command,nc_name](npc $x1)(string)
+
+[command,npc_route_length]()(int)
+
+[command,npc_route_get](int $x1)(coord)
+
+[command,npc_say](string $text,int $duration)
+
+[command,npc_finduid](npc_uid $x1)(boolean)
+
+[command,npc_getopbase](boolean $x1, boolean $x2)(string)
+
+[command,npc_getop](int $x1, boolean $x2)(string)
+
+[command,nc_getopbase](npc $x1, boolean $x2, boolean $x3)(string)
+
+[command,nc_getop](npc $x1, int $x2, boolean $x3)(string)
+
+[command,nc_getmultinpc](npc $x1, int $x2)(npc)
+
+[command,nc_headicon](npc $x1, int $x2)(graphic,int)
+
+[command,nc_vislevel](npc $x1)(int)

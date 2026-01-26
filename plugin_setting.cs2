@@ -1,0 +1,9 @@
+[command,plugin_setting_count](int $plugin)(int)
+
+[command,plugin_setting_get_type](int $plugin, int $setting)(int)
+
+[command,plugin_setting_get_label](int $plugin, int $setting)(string)
+
+[command,plugin_setting_get_value](int $plugin, int $option)(int)
+
+[command,plugin_setting_set_value](int $plugin, int $option, int $x3)(boolean)

@@ -1,0 +1,23 @@
+[command,loc_name]()(string)
+
+[command,loc_coord]()(coord)
+
+[command,loc_type]()(loc)
+
+[command,loc_find](coord $x1, loc $x2)(boolean)
+
+[command,loc_getopbase](boolean $x1)(string)
+
+[command,loc_getop](int $x1, boolean $x2)(string)
+
+[command,lc_getopbase](loc $x1, boolean $x2)(string)
+
+[command,lc_getop](loc $x1, int $x2, boolean $x3)(string)
+
+[command,lc_getmultiloc](loc $x1, int $x2)(loc)
+
+[command,lc_name](loc $x1)(string)
+
+[command,loc_width]()(int)
+
+[command,loc_length]()(int)

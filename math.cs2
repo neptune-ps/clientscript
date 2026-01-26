@@ -1,0 +1,79 @@
+[command,add](int $x1, int $x2)(int)
+
+[command,sub](int $x1, int $x2)(int)
+
+[command,multiply](int $x1, int $x2)(int)
+
+[command,divide](int $x1, int $x2)(int)
+
+[command,random](int $x1)(int)
+
+[command,randominc](int $x1)(int)
+
+[command,interpolate](int $output_min, int $output_max, int $input_min, int $input_max, int $input)(int)
+
+[command,addpercent](int $x1, int $x2)(int)
+
+[command,setbit](int $x1, int $x2)(int)
+
+[command,clearbit](int $x1, int $x2)(int)
+
+[command,testbit](int $x1, int $x2)(int)
+
+[command,modulo](int $x1, int $x2)(int)
+
+[command,pow](int $x1, int $x2)(int)
+
+[command,invpow](int $x1, int $x2)(int)
+
+[command,and](int $x1, int $x2)(int)
+
+[command,or](int $x1, int $x2)(int)
+
+[command,min](int $x1, int $x2)(int)
+
+[command,max](int $x1, int $x2)(int)
+
+/**
+ * Scales an input value by a fractional multiplier.
+ *
+ * Computes `(numerator / denominator) * input`, useful for applying percentages,
+ * ratios, or proportional scaling to values.
+ *
+ * The [numerator] and [denominator] define the scaling fraction, which is applied
+ * to the [input] value. The result is calculated as `(numerator * input) / denominator`.
+ *
+ * ```
+ * // Scale to 5/7 of the original value
+ * scale(5, 7, 512) // Returns 365
+ *
+ * // Apply 64.64% scaling
+ * scale(6464, 10000, cc_getmodelzoom)
+ *
+ * // Convert from one range to another (e.g., 334 in range 0-4 to range 0-7)
+ * scale(7, 4, 334) // Returns 584
+ * ```
+ */
+[command,scale](int $numerator, int $denominator, int $input)(int)
+
+[command,bitcount](int $num)(int)
+
+[command,togglebit](int $value, int $bit)(int)
+
+[command,setbit_range](int $value, int $startbit, int $endbit)(int)
+
+[command,clearbit_range](int $value, int $startbit, int $endbit)(int)
+
+[command,getbit_range](int $value, int $startbit, int $endbit)(int)
+
+[command,setbit_range_toint](int $value, int $startbit, int $endbit, int $new_value)(int)
+
+[command,sin_deg](int $x1)(int)
+
+[command,cos_deg](int $x1)(int)
+
+[command,atan2_deg](int $x1, int $x2)(int)
+
+[command,abs](int $x1)(int)
+
+[command,parseint](string $x1)(int)

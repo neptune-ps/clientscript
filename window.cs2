@@ -1,0 +1,13 @@
+[command,getwindowmode]()(int)
+
+[command,setwindowmode](int $x1)
+
+[command,getdefaultwindowmode]()(int)
+
+[command,setdefaultwindowmode](int $x1)
+
+[command,unknown_command_5310](int $x1)
+
+[command,unknown_command_5311](int $x1, int $x2)
+
+[command,unknown_command_5312](boolean $x1)

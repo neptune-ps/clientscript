@@ -1,0 +1,9 @@
+[command,cam_forceangle](int $x1, int $x2)
+
+[command,cam_getangle_xa]()(int)
+
+[command,cam_getangle_ya]()(int)
+
+[command,cam_setfollowheight](int $x1)
+
+[command,cam_getfollowheight]()(int)

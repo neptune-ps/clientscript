@@ -39,6 +39,8 @@
 
 [command,array_reverse](array $array)
 
+[command,array_rotate](array $array, int $amount)
+
 [command,array_swap](array $array, int $index1, int $index2)
 
 [command,array_copy](array $source, array $destination, int $source_pos, int $destination_pos, int $length)

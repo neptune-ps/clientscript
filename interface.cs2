@@ -22,38 +22,38 @@
 [command,cc_create_sibling](int $type, int $subid)
 [command,.cc_create_sibling](int $type, int $subid)
 
-[command,cc_find](component $component, int $subid)(int)
-[command,.cc_find](component $component, int $subid)(int)
+[command,cc_find](component $component, int $subid)(boolean)
+[command,.cc_find](component $component, int $subid)(boolean)
 
-[command,if_find](component $component)(int)
-[command,.if_find](component $component)(int)
+[command,if_find](component $component)(boolean)
+[command,.if_find](component $component)(boolean)
 
-[command,if_find_entityoverlay](entityoverlay $overlay)(int)
-[command,.if_find_entityoverlay](entityoverlay $overlay)(int)
+[command,if_find_entityoverlay](entityoverlay $overlay)(boolean)
+[command,.if_find_entityoverlay](entityoverlay $overlay)(boolean)
 
-[command,cc_find_entityoverlay](entityoverlay $overlay, int $subid)(int)
-[command,.cc_find_entityoverlay](entityoverlay $overlay, int $subid)(int)
+[command,cc_find_entityoverlay](entityoverlay $overlay, int $subid)(boolean)
+[command,.cc_find_entityoverlay](entityoverlay $overlay, int $subid)(boolean)
 
-[command,cc_find_parent]()(int)
-[command,.cc_find_parent]()(int)
+[command,cc_find_parent]()(boolean)
+[command,.cc_find_parent]()(boolean)
 
-[command,cc_find_layer]()(int)
-[command,.cc_find_layer]()(int)
+[command,cc_find_layer]()(boolean)
+[command,.cc_find_layer]()(boolean)
 
-[command,cc_find_next]()(int)
-[command,.cc_find_next]()(int)
+[command,cc_find_next_sibling]()(boolean)
+[command,.cc_find_next_sibling]()(boolean)
 
-[command,cc_deleteallchild]()(int)
-[command,.cc_deleteallchild]()(int)
+[command,cc_find_prev_sibling]()(int)
+[command,.cc_find_prev_sibling]()(int)
 
-[command,cc_countchild]()(int)
-[command,.cc_countchild]()(int)
+[command,cc_childcount]()(int)
+[command,.cc_childcount]()(int)
 
-[command,cc_parentsubid]()(int)
-[command,.cc_parentsubid]()(int)
+[command,cc_parentid]()(int)
+[command,.cc_parentid]()(int)
 
-[command,if_find_child](component $layer, param $param1, any $value1, param $param2, any $value2)(boolean)
-[command,.if_find_child](component $layer, param $param1, any $value1, param $param2, any $value2)(boolean)
+[command,cc_find_param](component $layer, param $param1, any $value1, param $param2, any $value2)(boolean)
+[command,.cc_find_param](component $layer, param $param1, any $value1, param $param2, any $value2)(boolean)
 
 /**
  * Finds all children of [layer] and [layersubid] using the specified [mode].
@@ -65,7 +65,7 @@
  *
  * @return The amount of children found.
  */
-[command,if_children_find](int $mode, component $layer, int $layersubid)(int)
+[command,if_query](int $mode, component $layer, int $layersubid)(int)
 
 /**
  * Finds all children of the `active_component` using the specified [mode].
@@ -77,17 +77,31 @@
  *
  * @return The amount of children found.
  */
-[command,cc_children_find](int $mode)(int)
-[command,.cc_children_find](int $mode)(int)
+[command,cc_query](int $mode)(int)
+[command,.cc_query](int $mode)(int)
 
-[command,if_children_findnext]()(boolean)
-[command,.if_children_findnext]()(boolean)
+[command,if_query_next]()(boolean)
+[command,.if_query_next]()(boolean)
 
-[command,if_children_findnextid]()(int)
+[command,if_query_nextid]()(int)
 
-[command,if_children_subids]()(intarray)
+[command,if_query_ids]()(intarray)
 
-[command,if_children_filter](param $param, any $value)(int)
+[command,if_query_refine](param $param, any $value)(int)
+
+[command,cc_find_child](int $index)(boolean)
+
+[command,cc_find_first_sibling]()(boolean)
+[command,.cc_find_first_sibling]()(boolean)
+
+[command,cc_find_last_sibling]()(boolean)
+[command,.cc_find_last_sibling]()(boolean)
+
+[command,cc_find_first_child]()(boolean)
+[command,.cc_find_first_child]()(boolean)
+
+[command,cc_find_last_child]()(boolean)
+[command,.cc_find_last_child]()(boolean)
 
 [command,cc_setposition](int $x, int $y, int $modeh, int $modev)
 [command,.cc_setposition](int $x, int $y, int $modeh, int $modev)
@@ -109,10 +123,6 @@
 
 [command,cc_setcolour](int $x1)
 [command,.cc_setcolour](int $x1)
-
-// For us Americans
-[command,cc_setcolor](int $x1)
-[command,.cc_setcolor](int $x1)
 
 [command,cc_setfill](boolean $x1)
 [command,.cc_setfill](boolean $x1)
@@ -655,9 +665,6 @@
 [command,if_setscrollpos](int $x1, int $x2, component $x3)
 
 [command,if_setcolour](int $x1, component $x2)
-
-// For us Americans
-[command,if_setcolor](int $x1, component $x2)
 
 [command,if_setfill](boolean $x1, component $x2)
 

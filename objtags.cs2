@@ -1,0 +1,29 @@
+[command,objtag_add](obj $obj, int $group, string $tag)
+
+[command,objtag_del](int $group, string $tag)(boolean)
+
+[command,objtag_remove](obj $obj, int $group, string $x3)(boolean)
+
+[command,objtag_findtags_byobj](obj $obj, int $group)(boolean)
+
+[command,objtag_findtags_bygroup](int $group)(boolean)
+
+[command,objtag_findtags_next]()(string)
+
+[command,objtag_findtags_reset]
+
+[command,objtag_findobjs_bytag](int $group, string $tag)(boolean)
+
+[command,objtag_findobjs_bygroup](int $group)(boolean)
+
+[command,objtag_findobjs_next]()(obj)
+
+[command,objtag_findobjs_reset]
+
+[command,objtag_has](obj $obj, int $group, string $tag)(boolean)
+
+[command,objtag_allempty]()(boolean)
+
+[command,objtag_delall]
+
+[command,objtag_delgroup](int $group)

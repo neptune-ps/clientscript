@@ -49,3 +49,7 @@
 
 [command,pronoun]()(int)
 [command,.pronoun]()(int)
+
+[command,tostring_long](long $x1)(string)
+
+[command,tostring_spacer_long](long $value, string $separator)(string)

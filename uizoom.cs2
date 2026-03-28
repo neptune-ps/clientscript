@@ -5,3 +5,5 @@
 [command,uizoom_reset]
 
 [command,uizoom_setmode](int $x1)
+
+[command,uizoom_getdefault]()(int)

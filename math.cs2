@@ -77,3 +77,45 @@
 [command,abs](int $x1)(int)
 
 [command,parseint](string $x1)(int)
+
+[command,long_add](long $x1, long $x2)(long)
+
+[command,long_sub](long $x1, long $x2)(long)
+
+[command,long_multiply](long $x1, long $x2)(long)
+
+[command,long_divide](long $x1, long $x2)(long)
+
+[command,long_min](long $x1, long $x2)(long)
+
+[command,long_max](long $x1, long $x2)(long)
+
+[command,long_scale](long $x1, long $x2, long $x3)(long)
+
+[command,int_to_long](int $x1)(long)
+
+[command,long_setbit](long $x1, int $x2)(long)
+
+[command,long_clearbit](long $x1, int $x2)(long)
+
+[command,long_testbit](long $x1, int $x2)(int)
+
+[command,long_bitcount](long $x1)(int)
+
+[command,long_togglebit](long $x1, int $x2)(long)
+
+[command,long_setbit_range](long $x1, int $x2, int $x3)(long)
+
+[command,long_clearbit_range](long $x1, int $x2, int $x3)(long)
+
+[command,long_getbit_range](long $x1, int $x2, int $x3)(long)
+
+[command,long_modulo](long $x1, long $x2)(long)
+
+[command,long_and](long $x1, long $x2)(long)
+
+[command,long_or](long $x1, long $x2)(long)
+
+[command,long_not](long $x1)(long)
+
+[command,long_setbit_range_tolong](long $x1, int $x2, int $x3, long $x4)(long)

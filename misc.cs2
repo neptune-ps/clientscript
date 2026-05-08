@@ -178,6 +178,10 @@
 
 [command,seq_prefetch](seq $x1)
 
+[command,unknown_command_3197]()(int)
+
+[command,unknown_command_3198](int $x1)()
+
 [command,sound_synth](synth $x1, int $x2, int $x3)
 
 [command,sound_song](midi $x1)

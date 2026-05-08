@@ -44,8 +44,8 @@
 
 [command,tradingpost_getofferitem](int $x1)(obj)
 
-[command,oc_stockmarket](obj $x1)(boolean)
+[command,stockmarket_sellable](obj $x1)(boolean)
 
-[command,oc_stockmarketvalue](obj $x1)(int, int)
+[command,stockmarket_value](obj $x1)(int, int)
 
-//[command,oc_tradeable](int $x1)
+[command,stockmarket_buyable](obj $x1)(boolean)

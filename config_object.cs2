@@ -36,4 +36,8 @@
 
 [command,oc_desc](obj $x1)(string)
 
+[command,oc_category](obj $x1)(category)
+
+[command,oc_tradeable](obj $x1)(boolean)
+
 [command,oc_isubop](obj $x1,int $x2,int $x3)(string)

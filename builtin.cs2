@@ -1,0 +1,13 @@
+/**
+ * Returns the full name of the script it is called in.
+ */
+[command,script]()(string)
+
+/**
+ * Joins the arguments into a string that prints all of their values. Accepts any expressions
+ * that return a single value.
+ *
+ * The string is similar to `"expr_1=<expr_1>, expr_2=<expr_2>, ..."`, except that it works
+ * on any type.
+ */
+[command,dump]/*(any... $exprs)(string)*/

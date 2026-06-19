@@ -184,7 +184,7 @@
 
 [command,sound_synth](synth $x1, int $x2, int $x3)
 
-[command,sound_song](midi $x1)
+[command,sound_song](midi $song, int $fade_out_delay, int $fade_out_duration, int $fade_in_delay, int $fade_in_duration)
 
 [command,sound_jingle](midi $x1, int $x2)
 
@@ -222,11 +222,11 @@
 
 [command,gameoption_getrange](int $x1)(int, int)
 
-[command,midi_stop](int $fade_out_delay, int $fade_out_speed)
+[command,sound_song_stop](int $fade_out_delay, int $fade_out_duration)
 
-[command,midi_song_withsecondary](midi $song, midi $secondary, int $fade_out_delay, int $fade_out_speed, int $fade_in_delay)
+[command,sound_song_withsecondary](midi $song, midi $secondary, int $fade_out_delay, int $fade_out_duration, int $fade_in_delay, int $fade_in_duration)
 
-[command,midi_song](midi $song, int $fade_out_delay, int $fade_out_speed, int $fade_in_delay)
+[command,sound_song_swap](int $fade_out_delay, int $fade_out_duration, int $fade_in_delay, int $fade_in_duration)
 
 [command,rt7_setenabled](boolean $x1)
 

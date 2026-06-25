@@ -103,6 +103,9 @@
 [command,cc_find_last_child]()(boolean)
 [command,.cc_find_last_child]()(boolean)
 
+[command,cc_assert]
+[command,.cc_assert]
+
 [command,cc_setposition](int $x, int $y, int $modeh, int $modev)
 [command,.cc_setposition](int $x, int $y, int $modeh, int $modev)
 

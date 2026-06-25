@@ -41,3 +41,7 @@
 [command,oc_tradeable](obj $x1)(boolean)
 
 [command,oc_isubop](obj $x1,int $x2,int $x3)(string)
+
+[command,oc_id](obj $obj)(int)
+
+[command,oc_byid](int $id)(obj)

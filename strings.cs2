@@ -53,3 +53,5 @@
 [command,tostring_long](long $x1)(string)
 
 [command,tostring_spacer_long](long $value, string $separator)(string)
+
+[command,safeparseint](string $text)(int, boolean)

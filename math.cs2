@@ -119,3 +119,7 @@
 [command,long_not](long $x1)(long)
 
 [command,long_setbit_range_tolong](long $x1, int $x2, int $x3, long $x4)(long)
+
+[command,long_pack](int $hi, int $lo)(long)
+
+[command,long_unpack](long $x1)(int, int)

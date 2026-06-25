@@ -68,11 +68,11 @@
 
 [command,setbit_range_toint](int $value, int $startbit, int $endbit, int $new_value)(int)
 
-[command,sin_deg](int $x1)(int)
+[command,sin](int $x1)(int)
 
-[command,cos_deg](int $x1)(int)
+[command,cos](int $x1)(int)
 
-[command,atan2_deg](int $x1, int $x2)(int)
+[command,atan2](int $x1, int $x2)(int)
 
 [command,abs](int $x1)(int)
 
